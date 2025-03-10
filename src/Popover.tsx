@@ -192,7 +192,7 @@ const PopoverInternal = forwardRef(
     }, [positionPopover, isOpen]);
 
     useEffect(() => {
-      const body = parentElement.ownerDocument.body;
+      const body = parentElement;
 
       body.addEventListener('click', handleOnClickOutside, clickOutsideCapture);
       body.addEventListener('contextmenu', handleOnClickOutside, clickOutsideCapture);
